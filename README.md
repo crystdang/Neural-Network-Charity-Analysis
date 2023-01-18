@@ -8,7 +8,16 @@ The CSV, charity_data.csv, was provided by Alphabet Soup's business team contain
 
 
 ## Results: 
-Using bulleted lists and images to support your answers, address the following questions.
+Inital test in AlphabetSoupCharity.ipynb:
+![This is an image](https://github.com/crystdang/Neural-Network-Charity-Analysis/blob/main/Images/layers1.png)
+![This is an image](https://github.com/crystdang/Neural-Network-Charity-Analysis/blob/main/Images/summary1.png)
+![This is an image](https://github.com/crystdang/Neural-Network-Charity-Analysis/blob/main/Images/loss_acc1.png)
+
+Intial test in AlphabetSoupCharity_Optimization.ipynb after additional bucketing and removal was done with the same model:
+![This is an image](https://github.com/crystdang/Neural-Network-Charity-Analysis/blob/main/Images/layers2.png)
+![This is an image](https://github.com/crystdang/Neural-Network-Charity-Analysis/blob/main/Images/loss_acc2.png)
+
+
 
 ### Data Preprocessing
 What variable(s) are considered the target(s) for your model?
@@ -20,14 +29,7 @@ What variable(s) are considered to be the features for your model?
 What variable(s) are neither targets nor features, and should be removed from the input data?
 - Removed variables are the "EIN", "NAME", "STATUS", and "SPECIAL_CONSIDERATIONS" columns.
 
-Results of the inital test:
-![This is an image](https://github.com/crystdang/Neural-Network-Charity-Analysis/blob/main/Images/layers1.png)
-![This is an image](https://github.com/crystdang/Neural-Network-Charity-Analysis/blob/main/Images/summary1.png)
-![This is an image](https://github.com/crystdang/Neural-Network-Charity-Analysis/blob/main/Images/loss_acc1.png)
 
-After additional bucketing and removal was done with the same model:
-![This is an image](https://github.com/crystdang/Neural-Network-Charity-Analysis/blob/main/Images/layers2.png)
-![This is an image](https://github.com/crystdang/Neural-Network-Charity-Analysis/blob/main/Images/loss_acc2.png)
 
 ### Compiling, Training, and Evaluating the Model
 How many neurons, layers, and activation functions did you select for your neural network model, and why?
@@ -44,6 +46,8 @@ What steps did you take to try and increase model performance?
 - Adjusting the activation to tanh
 - adjusting neurons to be 2-3 times the amount of inputs
 
+
+ 
 ### Summary: 
 Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
 
@@ -52,4 +56,6 @@ The tanh function can be used for classification or regression, and it expands t
 The ReLU function is ideal for looking at positive nonlinear input data for classification or regression.
 The Leaky ReLU function is a good alternative for nonlinear input data with many negative inputs.
 
-Links to images are working, and code is formatted and displayed correctly (2 pt).
+A best model hyperparameters test was run for 4 hours and 507 tests were run to reach the best accuracy of 73%:
+![This is an image](https://github.com/crystdang/Neural-Network-Charity-Analysis/blob/main/Images/hyperparameters_test.png)
+![This is an image](https://github.com/crystdang/Neural-Network-Charity-Analysis/blob/main/Images/best_model.png)
