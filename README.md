@@ -33,10 +33,12 @@ What variable(s) are neither targets nor features, and should be removed from th
 
 ### Compiling, Training, and Evaluating the Model
 How many neurons, layers, and activation functions did you select for your neural network model, and why?
-- 
+- The best resulting neural network model used 2 hidden layers, 110 neurons, and the activation functions tanh due to the large dataset and sigmoid due to the binary classification.
+![This is an image](https://github.com/crystdang/Neural-Network-Charity-Analysis/blob/main/Images/layers_tanh2.png)
+![This is an image](https://github.com/crystdang/Neural-Network-Charity-Analysis/blob/main/Images/loss_acc_tanh2.png)
 
 Were you able to achieve the target model performance?
-- No
+- No, only 68% accuracy was reached and did not achieve the target model performance.
 
 What steps did you take to try and increase model performance?
 - Removing additional unnecessary columns, ID, status and special considerations
@@ -53,9 +55,10 @@ Summarize the overall results of the deep learning model. Include a recommendati
 
 The sigmoid function values are normalized to a probability between 0 and 1, which is ideal for binary classification.
 The tanh function can be used for classification or regression, and it expands the range between -1 and 1.
-The ReLU function is ideal for looking at positive nonlinear input data for classification or regression.
-The Leaky ReLU function is a good alternative for nonlinear input data with many negative inputs.
 
 A best model hyperparameters test was run for 4 hours and 507 tests were run to reach the best accuracy of 73%:
 ![This is an image](https://github.com/crystdang/Neural-Network-Charity-Analysis/blob/main/Images/hyperparameters_test.png)
+![This is an image](https://github.com/crystdang/Neural-Network-Charity-Analysis/blob/main/Images/best_model.png)
+
+When the model was run, the loss was substantial and not the ideal hyperparameters:
 ![This is an image](https://github.com/crystdang/Neural-Network-Charity-Analysis/blob/main/Images/best_model.png)
